@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit; /* Ensure consistent font */
+}
+
+:root {
+
+  /* colors */
+  --color-primary: #000;
+  --color-secondary: #fff;
+  --color-green: #00A86B;
+  --color-gray: #D3D3D3;
+  --color-orange: #FFA500;
+  --color-blue: #0073E6;
+
+  /* font size */
+  --font-size-large-title: 3rem;
+  --font-size-medium-title: 2rem;
+  --font-size-text: 1rem;
+  --font-size-small-text: 0.875rem;
+
+  --font-family-primary: var(--font-montserrat), sans-serif;
+  --font-family-secondary: var(--font-lora), serif; 
+
+  --background: var(--color-secondary);
+  --foreground: var(--color-primary);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-primary);
+    --foreground: var(--color-secondary);
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-secondary);
+}
+
+
