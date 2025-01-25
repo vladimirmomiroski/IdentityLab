@@ -25,7 +25,7 @@ export default {
       fontFamily: {
         font_family_primary: "var(--font-family-primary)",
         font_family_secondary: "var(--font-family-secondary)",
-      }
+      },
     },
   },
   plugins: [],
